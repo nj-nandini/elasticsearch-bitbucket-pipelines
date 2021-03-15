@@ -2,10 +2,10 @@
 Bitbucket pipelines does not allow you to use dot notation in variables. So I created my own elastic search docker image to include the discovery type.
 
 ## Version
-Elasticsearch 7.3.2 
+Elasticsearch 7.5.2 
 
 ## Hub
-https://hub.docker.com/r/xiting/elasticsearch-bitbucket-pipeline
+https://hub.docker.com/r/njdocker24/elasticsearch-bitbucket-pipeline
 
 ## Example
 ```
@@ -20,7 +20,7 @@ definitions:
           - elasticsearch
   services:
     elasticsearch:
-      image: xiting/elasticsearch-bitbucket-pipeline
+      image: njdocker24/elasticsearch-bitbucket-pipeline
       variables:
         ES_JAVA_OPTS: '-Xms512m -Xmx512m'
     docker:
